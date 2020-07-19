@@ -8,7 +8,8 @@
     "lint": "./node_modules/.bin/eslint ./src",
     "test": "nyc --reporter=html --reporter=text --reporter=lcov mocha -r @babel/register",
     "pretty": "prettier --write '**/*.{js,json}' '!node_modules/**'",
-    "postpretty": "npx lint --fix"
+    "postpretty": "yarn lint --fix",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "dependencies": {
     "@babel/cli": "^7.10.4",

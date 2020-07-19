@@ -5,6 +5,6 @@ const indexRouter = express.Router();
 console.log(indexPage)
 console.log(nextPage)
 indexRouter.get('/', indexPage);
-indexRouter.get("/", nextPage);
+indexRouter.get('/', nextPage);
 
 export default indexRouter;

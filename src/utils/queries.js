@@ -14,4 +14,3 @@ VALUES ('chidimo', 'first message'),
 `;
 
 export const dropMessagesTable = 'DROP TABLE messages';
-

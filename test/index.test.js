@@ -22,9 +22,7 @@ describe('Next page test', () => {
       .expect(200)
       .end((err, res) => {
         expect(res.status).to.equal(200);
-        expect(res.body.message).to.equal(
-          'Is it works?'
-        );
+        expect(res.body.message).to.equal('Is it works?');
         done();
       });
   });

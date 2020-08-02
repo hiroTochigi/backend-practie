@@ -1,5 +1,5 @@
 import express from 'express';
-import { indexPage, messagesPage, nextPage } from '../controllers';
+import { indexPage, messagesPage, nextPage, addMessage} from '../controllers';
 
 const indexRouter = express.Router();
 
@@ -8,4 +8,5 @@ console.log(messagesPage)
 indexRouter.get('/', indexPage);
 indexRouter.get('/messages', messagesPage)
 indexRouter.get('/test', nextPage);
+indexRouter.post('/messages', addMessage);
 export default indexRouter;
